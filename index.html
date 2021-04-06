@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript с нуля</title>
+		<link rel="stylesheet "href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+		<script src="script.js"></script>
+		<script src="test.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<a class="header__logo" href="text.html">JavaScript from ZER0</a>
+		</header>
+
+		<div class="wrapper">
+
+		<div class="text">
+			<h2>Что такое JavaScript?</h2>
+			<ul>
+				<li>JavaScript - скриптовый язык, предназначенный для создания интерактивных веб-страниц.</li>
+				<li>JavaScript не требуется компилировать, он подключается к HTML-странице и работает "как есть".</li>
+				<li>JavaScript - НЕ Java, а совсем другой язык. Он похоже называется, но не более того. У JavaScript есть свой стандарт: ECMAScript, спецификация которого находится на сайте в разделе стандарт языка.</li>
+				<li>Кто-то говорит, что JavaScript похож на Python, кто-то говорит о схожести с языками Ruby, Self. Правда заключается в том, что JavaScript сам по себе. Это действительно особенный язык.</li>
+			</ul>
+		</div>
+
+		<img class="gif" src="img/js.gif">
+
+		<div class="text">
+			<h2>Что умеет JavaScript?</h2>
+			<ul>
+				<li>Изменять страницу, писать на ней текст, добавлять и удалять теги, менять стили элементов.</li>
+				<li>Реагировать на события: скрипт может ждать, когда что-нибудь случится (клик мыши, окончание загрузки страницы) и реагировать на это выполнением функции.</li>
+				<li>Выполнять запросы к серверу и загружать данные без перезагрузки страницы. Это иногда называют "AJAX".</li>
+				<li>Устанавливать и считывать cookie, валидировать данные, выводить сообщения и многое другое. </li>
+			</ul>
+		</div>
+
+		<img class="pic" src="img/4.png">
+
+		<div class="text">
+			<h2>Уникальность JavaScript</h2>
+			<div class="desc">
+				<p>Прелесть и соль JavaScript заключаются всего в нескольких пунктах:</p>
+			</div>
+			<ul>
+				<li>JavaScript - скриптовый язык, предназначенный для создания интерактивных веб-страниц.</li>
+				<li>JavaScript не требуется компилировать, он подключается к HTML-странице и работает "как есть".</li>
+				<li>JavaScript - НЕ Java, а совсем другой язык. Он похоже называется, но не более того. У JavaScript есть свой стандарт: ECMAScript, спецификация которого находится на сайте в разделе стандарт языка.</li>
+				<li>Кто-то говорит, что JavaScript похож на Python, кто-то говорит о схожести с языками Ruby, Self. Правда заключается в том, что JavaScript сам по себе. Это действительно особенный язык.</li>
+			</ul>
+			<p></p>
+			<div class="desc">
+				<p>Этот компот преимуществ нельзя найти ни в одной из других технологий.</p>
+				<p>Например, такие технологии как ActiveX, VBScript, XUL - поддерживаются не в каждом браузере (не кросс-браузерны). Такие технологии как Flash, Silverlight, Java - не полностью интегрированы с браузером, работают в своем окружении.</p>
+				<p>Поэтому JavaScript - уникальная технология, и таковой останется. Сейчас она развивается, создается язык Javascript 2 и новый интерпретатор.</p>
+				<p class="vyvod">Учите JavaScript!</p>
+			</div>
+		</div>
+
+		<div class="text">
+			<h2>Примеры использования JavaScript</h2>
+		</div>
+		<ul class="js">
+				
+
+
+
+
+
+
+
+		<li><div  class="text">
+		<form method="get" name="name">
+			<label for="user_name">Введите имя</label>
+			<br>
+			<input type="text" name="user_name_text" maxlength="20" id="user_name" placeholder="Ваше имя">
+			<br>
+			<button name="user_name_button" value="Отправить" onclick="nameForm(); return false;" onsubmit="return false;">Отправить</button>
+		</form>
+		</div></li>
+
+
+
+		<li><div class="text">
+		<form method="get" name="area">
+			<label> Вычисление площади треугольника </label>
+			<br>
+			<input type="text" name="area_side" placeholder="Сторона" maxlength="20" id="area_side">
+			<br>
+			<input type="text" name="area_high" placeholder="Высота" maxlength="20">	
+			<br>
+			<button name="area_button" value="Вычислить площадь" onclick="takeArea(); return false" onsubmit="return false;">Вычислить площадь</button>
+		</form>
+		</div></li>
+
+
+
+
+		<li><div class="text">
+		<form method="get" name="strings">
+			<label>Сравнение количества элементов в строках</label>
+			<br>
+			<input type="text" name="first_string" placeholder="Первая строка" id="first_string">
+			<br>
+			<input type="text" name="second_string" placeholder="Вторая строка" >
+			<br>
+			<button name="area_button" value="Сравнить строки" onclick="compareStrings(); return false">Сравнить строки</button>
+		</form>	
+		</div></li>
+
+
+
+
+
+		<li><div class="text">
+			<form method="get" name="maxmin">
+			<label> Поиск минимального и максимального значения массива из 5 цифр</label>
+			<br>
+			<input type="text" name="array" placeholder="Массив" id="array">	
+			<br>
+			<button name="maxmin_button" value="Принять" onclick="takeMaxMin(); return false;">Принять</button>
+			</form>
+		</div></li>
+
+
+
+		<li><div class="text">
+			<label>Таймер</label>
+			<div class="maintimer">
+			<div class="timer">
+            	<p>
+                	<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+            	</p>
+        	</div>
+    		<div class="metods">
+        		<input type="button" onclick="maintimer.start()" value="ЗАПУСК" id="start">
+        		<input type="button" onclick="maintimer.stop()" value="СТОП" id="stop">
+        		<input type="button" onclick="maintimer.over()" value="РЕСТАРТ" id="restart">
+			</div>
+			</div>
+		</div></li>
+
+
+
+
+
+		<li>
+			<div class="text">
+				
+				<div id="vopros" class="vopros" >
+					<h4>Вопрос 1</h4>
+					<p>В чем отличие между локальной и глобальной переменной?</p>
+					<input type="radio" name="1" value="1" data-right required="required">
+					<label>Глобальные видны повсюду, локальные только в функциях</label>
+					<br>
+					<input type="radio" name="1" value="0">
+					<label>Глобальные можно переопределять, локальные нельзя</label>
+					<br>
+					<input type="radio" name="1" value="0">
+					<label>Локальные можно переопределять, глобальные нельзя</label>
+					<br>
+					<input type="radio" name="1" value="0">
+					<label>Локальные видны повсюду, глобальные только в функциях</label>
+					<br>
+					<input type="radio" name="1" value="0">
+					<label>Отличий нет</label>
+					<br>
+				</div>
+
+				<div id="vopros" class="vopros">
+					<h4>Вопрос 2</h4>
+					<p>Что такое условный оператор?</p>
+					<input type="radio" name="2" value="1" data-right required="required">
+					<label>Оператор сравнения значений</label>
+					<br>
+					<input type="radio" name="2" value="0">
+					<label>Конструкция, что выполняет код несколько раз</label>
+					<br>
+					<input type="radio" name="2" value="0">
+					<label>Конструкция для создания определенной переменной</label>
+					<br>		
+				</div>
+
+				<div id="vopros" class="vopros">
+					<h4>Вопрос 3</h4>
+					<p>Какие циклы есть в языке JavaScript?</p>
+					<input type="radio" name="3" value="0" required="required">
+					<label>for, forMap, foreach, while</label>
+					<br>
+					<input type="radio" name="3" value="1" data-right>
+					<label>for, while, do while</label>
+					<br>
+					<input type="radio" name="3" value="0">
+					<label>for, forMap, foreach, while, do while</label>
+					<br>
+					<input type="radio" name="3" value="0">
+					<label>for, while, do while, foreach</label>
+					<br>	
+				</div>
+
+				<div id="vopros" class="vopros">
+					<h4>Вопрос 4</h4>
+					<p>В чем разница между confirm и prompt?</p>
+					<input type="radio" name="4" value="0" required="required">
+					<label>Они ничем не отличаются</label>
+					<br>
+					<input type="radio" name="4" value="1" data-right>
+					<label>prompt вызывает диалоговое окно с полем для ввода, confirm - окно с подтверждением</label>
+					<br>
+					<input type="radio" name="4" value="0">
+					<label>confirm вызывает диалоговое окно с полем для ввода, prompt - окно с подтверждением</label>
+					<br>
+				</div>
+
+				<div id="vopros" class="vopros">
+					<h4>Вопрос 5</h4>
+					<p>Какие значения можно хранить в переменных?</p>
+					<input type="radio" name="5" value="1" data-right required="required">
+					<label>Строки, числа с точкой, простые числа и булевые выражения</label>
+					<br>
+					<input type="radio" name="5" value="0">
+					<label>Только числа и строки</label>
+					<br>
+					<input type="radio" name="5" value="0">
+					<label>Строки, числа с точкой и простые числа</label>
+					<br>
+				</div>
+
+				<div id="vopros" class="vopros">
+				<h4>Вопрос 6</h4>
+					<p>Где верно указан запуск всплывающего окна?</p>
+					<input type="radio" name="6" value="0" required="required">
+					<label>new alert ("Hi")</label>
+					<br>
+					<input type="radio" name="6" value="1" data-right>
+					<label>alert ("Hi")</label>
+					<br>
+					<input type="radio" name="6" value="0">
+					<label>info ("Hi")</label>
+					<br>
+					<input type="radio" name="6" value="0">
+					<label>Нет верных вариантов</label>
+					<br>
+				</div>
+
+				<div id="vopros" class="vopros">
+					<h4>Вопрос 7</h4>
+					<p>Где можно использовать JavaScript?</p>
+					<input type="radio" name="7" value="0" required="required">
+					<label>Мобильные приложения</label>
+					<br>
+					<input type="radio" name="7" value="0">
+					<label>Веб-приложения</label>
+					<br>
+					<input type="radio" name="7" value="0">
+					<label>Серверные приложения</label>
+					<br>
+					<input type="radio" name="7" value="1" data-right>
+					<label>Можно во всех перечисленных</label>
+					<br>
+					<input type="radio" name="7" value="0">
+					<label>Прикладное программное обеспечение</label>
+					<br>
+				</div>
+
+				<div id="vopros" class="vopros">
+					<h4>Вопрос 8</h4>
+					<p>Какие функции выполняет JS?</p>
+					<input type="radio" name="8" value="1" data-right required="required">
+					<label>Отвечает за функции на стороне клиента</label>
+					<br>
+					<input type="radio" name="8" value="0">
+					<label>Отвечает за работу с базами данных</label>
+					<br>
+					<input type="radio" name="8" value="0">
+					<label>Создает стилевое оформление сайта</label>
+					<br>
+					<input type="radio" name="8" value="0">
+					<label>Создает разметку на странице сайта</label>
+					<br>
+					<input type="radio" name="8">
+					<label>Выполняет работу с сервером</label>
+					<br>
+				</div>
+
+				<div id="vopros" class="vopros">
+					<h4>Вопрос 9</h4>
+					<p>Где верно указан вывод данных?</p>
+					<input type="radio" name="9" value="0" required="required">
+					<label>documentWrite("Hello");</label>
+					<br>
+					<input type="radio" name="9" value="0">
+					<label>print(Hello);</label>
+					<br>
+					<input type="radio" name="9" value="0">
+					<label>prompt("Hello")</label>
+					<br>
+					<input type="radio" name="9" value="0">
+					<label>write("Hello");</label>
+					<br>
+					<input type="radio" name="9" value="1" data-right>
+					<label>console.log("Hello");</label>
+					<br>
+				</div>
+
+				<div id="vopros" class="vopros">
+					<h4>Вопрос 10</h4>
+					<p>Где верно указано имя переменной?</p>
+					<input type="radio" name="10" value="1" data-right required="required">
+					<label>var number = 12,5;</label>
+					<br>
+					<input type="radio" name="10" value="0" >
+					<label>var num = "STRING";</label>
+					<br>
+					<input type="radio" name="10" value="0">
+					<label>var isDone = 0;</label>
+					<br>
+					<input type="radio" name="10" value="0">
+					<label>var b = false;</label>
+				</div>
+			
+			<button id="kn_pr"  onclick="proverit();">Проверить</button>
+			<div id="rezultat" class="rezultat" style="display:none"></div>
+		
+	</div></li>
+
+
+
+		<li><div class="text">
+			<label>Включить заставку</label>
+			<button class="popupButton" id="popupButton" onclick="openPopup()">Заставка</button>
+				<div id="mypopup" class="popup">
+					<div class="popup-content">
+						<div class="popup-header">
+							<span id="popupNameUser"></span>
+							<span class="close">&times</span>
+						</div>
+						<div id="popup-body">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</li>
+		</ul>
+	
+
+
+	</div>
+
+	</body>
+</html>
